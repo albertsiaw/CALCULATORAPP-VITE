@@ -7,33 +7,34 @@
     
     <title>Calculator App</title>
   </head>
-  <body>
-    <div id="app">
-      <div class="calculator">
-      <input type="text" id="display" disabled>
-      <div class="buttons">
-          <button onclick="clearDisplay()">C</button>
-          <button onclick="deleteLast()">DEL</button>
-          <button onclick="appendOperator('/')">/</button>
-          <button onclick="appendOperator('*')">*</button>
-
-          <button onclick="appendNumber('7')">7</button>
-          <button onclick="appendNumber('8')">8</button>
-          <button onclick="appendNumber('9')">9</button>
-          <button onclick="appendOperator('-')">-</button>
-
-          <button onclick="appendNumber('4')">4</button>
-          <button onclick="appendNumber('5')">5</button>
-          <button onclick="appendNumber('6')">6</button>
-          <button onclick="appendOperator('+')">+</button>
-
-          <button onclick="appendNumber('1')">1</button>
-          <button onclick="appendNumber('2')">2</button>
-          <button onclick="appendNumber('3')">3</button>
-          <button onclick="calculate()">=</button>
-
-          <button onclick="appendNumber('0')">0</button>
-          <button onclick="appendNumber('.')">.</button>
+  <body class="bg-black flex justify-center item-center min-h-screen py-9q
+  ">
+    <div id="app" class="text center">
+      <div class="bg-gray-500 rounded-lg shadow-md p-5">
+      <input type="text" id="display" class="display bg-black text-white text-right px-4 border-none" disabled>
+      <div class="grid grid-cols-4 gap-2">
+            <button class="button bg-red-500 hover:bg-red-600 text-white" onclick="clearDisplay()">C</button>
+                <button class="button bg-red-500 hover:bg-yellow-600 text-white" onclick="deleteLast()">DEL</button>
+                <button class="button bg-gray-600 hover:bg-gray-500 text-white operator" onclick="appendOperator('/')">÷</button>
+                 <button class="button bg-yellow-600 hover:bg-yellow-500 text-white operator" onclick="appendOperator('*')">x</button>
+                
+                 <button class="button bg-gray-200 hover:bg-gray-300 text-gray-800 number" onclick="appendNumber('7')">7</button>
+                <button class="button bg-gray-200 hover:bg-gray-300 text-gray-800 number" onclick="appendNumber('8')">8</button>
+                <button class="button bg-gray-200 hover:bg-gray-300 text-gray-800 number" onclick="appendNumber('9')">9</button>
+                <button class="button bg-yellow-600 hover:bg-yellow-500 text-white operator" onclick="appendOperator('-')">-</button>
+              
+                <button class="button bg-gray-200 hover:bg-gray-300 text-gray-800 number" onclick="appendNumber('4')">4</button>
+                <button class="button bg-gray-200 hover:bg-gray-300 text-gray-800 number" onclick="appendNumber('5')">5</button>
+                <button class="button bg-gray-200 hover:bg-gray-300 text-gray-800 number" onclick="appendNumber('6')">6</button>
+                <button class="button bg-yellow-600 hover:bg-yellow-500 text-white operator" onclick="appendOperator('+')">+</button>
+              
+                <button class="button bg-gray-200 hover:bg-gray-300 text-gray-800 number" onclick="appendNumber('1')">1</button>
+                <button class="button bg-gray-200 hover:bg-gray-300 text-gray-800 number" onclick="appendNumber('2')">2</button>
+                <button class="button bg-gray-200 hover:bg-gray-300 text-gray-800 number" onclick="appendNumber('3')">3</button>
+                <button class="button bg-yellow-600 hover:bg-yellow-500 text-white equals" onclick="calculate()">=</button>
+               
+                <button class="button bg-gray-200 hover:bg-gray-300 text-gray-800 number span-2" onclick="appendNumber('0')">0</button>
+                <button class="button bg-gray-200 hover:bg-gray-300 text-gray-800 number" onclick="appendNumber('.')">.</button>
       </div>
       </div>
  
